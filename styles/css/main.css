@@ -343,5 +343,52 @@ header h1 {
   font-size: 40px;
   color: coral;
 }
+header .navegador ul {
+  display: flex;
+  list-style: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: dimgray;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .navegador ul li {
+  padding: 10px 30px 0px 0px;
+}
+header .navegador ul li:hover {
+  color: coral;
+}
+header .navegador .submenu-item {
+  position: relative;
+  display: block;
+}
+header .navegador .submenu-item:hover {
+  color: coral;
+}
+header .navegador a:hover {
+  color: coral;
+}
+header .navegador .submenu-list {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  width: 100px;
+  left: 535px;
+}
+header .navegador a {
+  text-decoration: none;
+  color: dimgray;
+}
+header .submenu:hover .submenu-list {
+  visibility: visible;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*# sourceMappingURL=main.css.map */
