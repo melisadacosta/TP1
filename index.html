@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,73 @@
     <title>Mi blog de cocina</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/css/main.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
 </head>
+
 <body>
     <div id="home">
         <div class="container">
-        <header>
-            <h1>Mi blog de cocina</h1>
-            <div class="navegador">
-                <nav>
-                    <ul class="menu">
-                        <a href="#home"><li>Home</li></a>
-                        <li class="submenu">
-                            <span class="submenu-item"><a href="">Platos ▼</a></span>
+            <header>
+                <h1>Mi blog de cocina</h1>
+                <div class="navegador">
+                    <nav>
+                        <ul class="menu">
+                            <a href="#home">
+                                <li>Home</li>
+                            </a>
+                            <li class="submenu">
+                                <span class="submenu-item"><a href="">Platos ▼</a></span>
                                 <ul class="submenu-list">
                                     <li class="submenu-items"><a href="">Ensalada</a></li>
                                     <li class="submenu-items">Carne</li>
                                     <li class="submenu-items">Helado</li>
                                 </ul>
-                        </li>
-                        <li>Sobre mi</li>
-                        <li>Contacto</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="banner-imgs">
-            <div class="img-transition"><img src="img/img-1.jpg"/></div>
-            <div class="img-transition"><img src="img/img-2.jpg"/></div>
-            <div class="img-transition"><img src="img/img-3.jpg"/></div>
-            <div class="img-transition1">
-                <img src="img/img-4.jpg"/>
-                <div class="text-container">
-                    <span>Diciembre 23, 2017 | 21 comentarios</span>
-                    <p>"Unas tostadas bien sabrosas para arrancar bien el día"</p>
+                            </li>
+                            <li>Sobre mi</li>
+                            <li>Contacto</li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-        </section>
-
+            </header>
+            <main class="banner-imgs">
+                <div class="img-transition1">
+                    <img src="img/img-1.jpg" />
+                    <div class="text-container">
+                        <span>Mayo 17, 2017 | 5 comentarios</span>
+                        <p>"Los mejores tacos del país, en pocos pasos."</p>
+                    </div>
+                </div>
+                <div class="img-transition"><img src="img/img-2.jpg" /></div>
+                <div class="img-transition"><img src="img/img-3.jpg" /></div>
+                <div class="img-transition1">
+                    <img src="img/img-4.jpg" />
+                    <div class="text-container">
+                        <span>Diciembre 23, 2017 | 21 comentarios</span>
+                        <p>"Unas tostadas bien sabrosas para arrancar bien el día."</p>
+                    </div>
+                </div>
+            </main>
+            <section class="container-sections">
+                <img class="img-radius" src="img/platos.jpeg" />
+                <button class="btn1">PLATOS</button>
+                <img class="img-radius" src="img/recetas.JPG" />
+                <button class="btn2">RECETAS</button>
+                <img class="img-radius" src="img/exoticos.JPG" />
+                <button class="btn3">EXOTICOS</button>
+            </section>
+            <section class="secondary-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xurmz6BAUw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <aside class="presentacion">
+                <h1>SOBRE MI</h1>
+                <img src="img/perfil.jpg"/>
+                <h2>Natalia Guida</h2>
+                <p>Tengo 23 años, hace dos años estudio cocina y soy fánatica de la comida, espero que les guste mi contenido.</p>
+                <h1>NEWSLETTER</h1>
+            </aside>
+            </section>
         </div>
     </div>
-    
+
 </body>
+
 </html>

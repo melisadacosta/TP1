@@ -1,0 +1,30 @@
+.btn1, .btn2, .btn3{
+    border: 0;
+    background-color: white;
+    font-family: $main-font;
+    color: $main-color;
+    width: 180px;
+    border-radius: 60px;
+    padding: 10px;
+    position: absolute;
+    font-weight: bold;
+}
+.btn1{
+    right: 920px;
+    z-index: 2;
+    &:hover{
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+}
+.btn3{
+    left: 920px;
+    &:hover{
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+}
+.btn2:hover{
+    background-color: $secondary-color;
+    cursor: pointer;
+}
