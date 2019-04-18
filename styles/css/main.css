@@ -350,6 +350,7 @@ header .navegador ul {
   color: dimgray;
   text-transform: uppercase;
   font-weight: bold;
+  justify-content: center;
 }
 header .navegador ul li {
   padding: 10px 30px 0px 0px;
@@ -389,6 +390,23 @@ header .submenu:hover .submenu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.banner-imgs {
+  display: flex;
+}
+.banner-imgs .img-transition {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.banner-imgs .img-transition img {
+  width: 85%;
+}
+.banner-imgs .img-transition span, .banner-imgs .img-transition p {
+  visibility: hidden;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
