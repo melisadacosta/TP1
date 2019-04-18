@@ -395,18 +395,46 @@ header .submenu:hover .submenu-list {
 .banner-imgs {
   display: flex;
 }
-.banner-imgs .img-transition {
+.banner-imgs .img-transition, .banner-imgs .img-transition1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
-.banner-imgs .img-transition img {
-  width: 85%;
+.banner-imgs .img-transition img, .banner-imgs .img-transition1 img {
+  max-width: 300px;
+  align-self: center;
 }
-.banner-imgs .img-transition span, .banner-imgs .img-transition p {
+.banner-imgs .img-transition .text-container, .banner-imgs .img-transition1 .text-container {
   visibility: hidden;
+  overflow: hidden;
   position: absolute;
+  width: 300px;
+  height: 100px;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 20px;
+  bottom: -100px;
+  padding-top: 20px;
+  color: white;
+  background-color: rgba(255, 127, 80, 0.726);
+  transition: 0.5s ease-in;
+}
+.banner-imgs .img-transition span, .banner-imgs .img-transition1 span {
+  font-size: 10px;
+}
+.banner-imgs .img-transition p, .banner-imgs .img-transition1 p {
+  font-size: 14px;
+}
+
+.img-transition1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-transition1:hover .text-container {
+  visibility: visible;
+  bottom: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
