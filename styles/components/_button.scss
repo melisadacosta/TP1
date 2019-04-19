@@ -28,3 +28,14 @@
     background-color: $secondary-color;
     cursor: pointer;
 }
+.btn-art{
+    border: 0;
+    background-color: rgba(255, 127, 80, 0.336);
+    font-family: $main-font;
+    color: $main-color;
+    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+}

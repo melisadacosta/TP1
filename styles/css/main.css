@@ -430,6 +430,7 @@ header .submenu:hover .submenu-list {
   font-size: 14px;
   padding-left: 15px;
   line-height: 20px;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .img-transition1 {
@@ -462,11 +463,21 @@ header .submenu:hover .submenu-list {
   flex-direction: row;
   justify-content: center;
   margin-top: 35px;
+  position: relative;
 }
-.secondary-container iframe {
+.secondary-container .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondary-container .column iframe {
   width: 670px;
   height: 480px;
   margin-right: 30px;
+}
+.secondary-container .column p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
 }
 
 .presentacion {
@@ -474,7 +485,6 @@ header .submenu:hover .submenu-list {
   align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: -10px;
 }
 .presentacion img {
@@ -487,7 +497,7 @@ header .submenu:hover .submenu-list {
   font-family: "IBM Plex Mono", monospace;
   background-color: rgba(255, 127, 80, 0.336);
   font-size: 16px;
-  width: 300px;
+  width: 285px;
   text-align: center;
   padding: 10px;
   margin-bottom: 35px;
@@ -504,6 +514,55 @@ header .submenu:hover .submenu-list {
   color: dimgray;
   margin-bottom: 30px;
   line-height: 16px;
+}
+
+.container-art {
+  display: flex;
+  flex-direction: column;
+}
+.container-art .receta-art {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: center;
+  position: relative;
+  align-content: space-between;
+  max-width: 670px;
+  border-top: 0.5px solid dimgray;
+  padding-top: 25px;
+}
+.container-art .receta-art .img-radius {
+  max-width: 320px;
+  border-radius: 15%;
+  margin-right: 35px;
+}
+.container-art .receta-art span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  color: dimgray;
+}
+.container-art .receta-art span .fa-heart, .container-art .receta-art span .fa-comments, .container-art .receta-art span .fa-share-alt {
+  letter-spacing: 2pt;
+}
+.container-art .receta-art span .fa-heart i, .container-art .receta-art span .fa-comments i, .container-art .receta-art span .fa-share-alt i {
+  font-family: "IBM Plex Mono", monospace;
+}
+.container-art .receta-art h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.container-art .receta-art p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: dimgray;
+  margin-bottom: 30px;
+}
+.container-art .receta-art .text-art {
+  display: flex;
+  flex-direction: column;
+  margin-top: -60px;
 }
 
 .btn1, .btn2, .btn3 {
@@ -538,6 +597,18 @@ header .submenu:hover .submenu-list {
 .btn2:hover {
   background-color: coral;
   cursor: pointer;
+}
+
+.btn-art {
+  border: 0;
+  background-color: rgba(255, 127, 80, 0.336);
+  font-family: "IBM Plex Mono", monospace;
+  color: dimgray;
+  width: 120px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
