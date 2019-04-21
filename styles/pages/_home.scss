@@ -6,16 +6,24 @@
 }
 .banner-imgs{
     display: flex;
+    flex-wrap: wrap;
     .img-transition, .img-transition1{ 
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         margin: 10px;
-    
+        flex-grow: 1;
     img{
         max-width: 300px;
-        align-self: center;
+    }
+    @media (max-width:1200px){
+        img{
+            max-width: 400px;
+        }
+        .text-container:hover{
+            width: 400px;
+        }
     }
     .text-container{
         visibility: hidden;
@@ -57,11 +65,18 @@
     align-items: center;
     margin-top: 25px;
     justify-content: center;
+    .container-radius, .container-radius1, .container-radius2{
+        position: relative;
+    }
     .img-radius{
         max-width: 320px;
-        position: relative;
         border-radius: 15%;
         margin: 10px;
+    }
+    @media (max-width:1200px){
+        .img-radius{
+            max-width: 300px;
+        }
     }
 }
 .secondary-container{

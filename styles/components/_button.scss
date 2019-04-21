@@ -10,7 +10,8 @@
     font-weight: bold;
 }
 .btn1{
-    right: 920px;
+    transform: translate(0, -135px);
+    right: 22%;
     z-index: 2;
     &:hover{
         background-color: $secondary-color;
@@ -18,11 +19,16 @@
     }
 }
 .btn3{
-    left: 920px;
+    transform: translate(0, -135px);
+    right: 22%;
     &:hover{
         background-color: $secondary-color;
         cursor: pointer;
     }
+}
+.btn2{
+    transform: translate(0, -135px);
+    right: 22%;
 }
 .btn2:hover{
     background-color: $secondary-color;
