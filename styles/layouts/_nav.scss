@@ -1,8 +1,57 @@
 header{
     h1{
-        font-family: "Indie Flower", cursive;
+        font-family: $secondary-font;
         text-align: center;
         font-size: 40px;
-        color: coral;
+        color: $secondary-color;
     }
+    .navegador{
+        ul{
+        display: flex;
+        list-style: none;
+        font-family: $main-font;
+        color: $main-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        justify-content: center;
+        li{
+            padding: 10px 30px 0px 0px;
+            cursor: pointer;
+        }
+        li:hover{
+            color: $secondary-color;
+        }
+        }
+        .submenu-item{
+            position: relative;
+            display: block;
+        }
+        .submenu-item:hover{
+            color: $secondary-color;
+        }
+        a:hover{
+            color: $secondary-color;
+        }
+        .submenu-list{
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: white;
+            width: 100px;
+            left: 535px;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: $main-color;
+        }
+    }
+    .submenu:hover .submenu-list{
+        visibility: visible;
+    }
+    
 }
+

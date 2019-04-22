@@ -1,0 +1,47 @@
+.btn1, .btn2, .btn3{
+    border: 0;
+    background-color: white;
+    font-family: $main-font;
+    color: $main-color;
+    width: 180px;
+    border-radius: 60px;
+    padding: 10px;
+    position: absolute;
+    font-weight: bold;
+}
+.btn1{
+    transform: translate(0, -135px);
+    right: 22%;
+    z-index: 2;
+    &:hover{
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+}
+.btn3{
+    transform: translate(0, -135px);
+    right: 22%;
+    &:hover{
+        background-color: $secondary-color;
+        cursor: pointer;
+    }
+}
+.btn2{
+    transform: translate(0, -135px);
+    right: 22%;
+}
+.btn2:hover{
+    background-color: $secondary-color;
+    cursor: pointer;
+}
+.btn-art{
+    border: 0;
+    background-color: rgba(255, 127, 80, 0.336);
+    font-family: $main-font;
+    color: $main-color;
+    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+}
