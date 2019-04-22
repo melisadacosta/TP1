@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+    margin: auto;
+    display: flex;
+   justify-content: center;  
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10%;
+}
+.pionono-salado {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10%;
+}
+
+.title-recipe {
+    max-width: 400px;
+    font-size: 12px;
+   font-family: "IBM Plex Mono", monospace;
+}
+.title-recipe p {
+color: #7f8180;
+}
+.elena {
+  color:  #7f8180;
+}
+.intro {
+    border-left: 2px solid #e66c2c;
+    padding: 5px 0px 5px 10px;
+    max-width: 400px;
+    font-size: 12px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+ul {
+    align-items: flex-start;
+    color: #7f8180;
+    font-size: 12px;
+    font-family:  "IBM Plex Mono", monospace;
+    list-style: none;    
+}
+li::before {
+    content: "•";
+    color: #e66c2c;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
