@@ -1,0 +1,60 @@
+body {
+    width: 100%;
+    margin: auto;
+    display: flex;
+   justify-content: center;  
+}
+
+img {
+    width: 515px;
+    margin: 40px;
+    border-radius: 10%;
+}
+.pionono-salado {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.recipe {
+    margin-left: 40px;
+}
+.title-recipe {
+    max-width: 515px;
+    font-size: 12px;
+    font-family: $main-font;
+}
+.title-recipe p {
+color: #7f8180;
+}
+.elena {
+  color:  #7f8180;
+}
+.intro {
+    border-left: 2px solid $secondary-color;
+    padding: 5px 0px 5px 10px;
+    max-width: 515px;
+    font-size: 12px;
+    font-family:$main-font;
+}
+
+.ingredients ul {
+    margin-left: -30px;
+    align-items: flex-start;
+    color: #7f8180;
+    font-size: 12px;
+    font-family: $main-font;
+    list-style: none;    
+}
+.ingredients li::before {
+    content: "•";
+    color: $secondary-color;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.span {
+    font-family: $main-font;
+    text-align: center;
+    font-size: 9px;
+}
+

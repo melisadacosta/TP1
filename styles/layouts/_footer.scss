@@ -1,0 +1,12 @@
+.footer-list { 
+    display: flex;
+    font-family: $main-font;
+        font-size: 10px;
+        color: grey;
+        margin-bottom: 10px;
+        padding: 31px;
+        border-bottom: 1px solid #9E9E9E;
+        list-style: none;
+        justify-content: space-between;
+
+}
