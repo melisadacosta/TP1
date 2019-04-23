@@ -10,73 +10,89 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/main.css">
 </head>
 
 <body>
-    <div class="all-container">
-    <header>
-        <div class="banner-container">
-            <img class="banner" src="../img/banner.jpg">
-        </div>
-    </header>
-    <div class="container-recipe">
-        <div class="pionono-salado">
-            <img class="foto-recipe" src="../img/receta/recetas.JPG" alt="" class="receta-img">
-            <div class="span">
-                <span>By Maria | Mayo 19, <i class="far fa-heart"> <span>20</span>
-                    </i><i class="far fa-comments">
-                        <span>10</span>
-                    </i><i class="fas fa-share-alt"></i></span>
+    <div id="receta">
+        <div class="container">
+            <header>
+                <h1>Mi blog de cocina</h1>
+                <div class="navegador">
+                    <nav>
+                        <ul class="menu">
+                            <a href="../index.html">
+                                <li>Home</li>
+                            </a>
+                            <li class="submenu">
+                                <span class="submenu-item"><a href="">Platos <i class="fas fa-sort-down"></i></a></span>
+                                <ul class="submenu-list">
+                                    <li class="submenu-items"><a href="">Ensalada</a></li>
+                                    <li class="submenu-items">Carne</li>
+                                    <li class="submenu-items">Helado</li>
+                                </ul>
+                            </li>
+                            <li>Sobre mi</li>
+                            <li>Contacto</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="pionono-salado">
+                <img src="../img/receta/recetas.JPG" alt="" class="receta-img">
+                <div class="span">
+                    <span>By Maria | Mayo 19, <i class="far fa-heart"> <span>20</span>
+                        </i><i class="far fa-comments">
+                            <span>10</span>
+                        </i><i class="fas fa-share-alt"></i></span>
+                </div>
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
             </div>
-            <div class="icons">
-                <i class="fab fa-facebook-f" style="color: white; background: #523fff;"></i>
-                <i class="fab fa-twitter" style="color: white; background: #3fc2ff;"></i>
-                <i class="fab fa-google-plus-g" style="color: white; background: #fc8038;"></i>
-                <i class="fab fa-instagram" style="color: white; background: #a04e1f;"></i>
-                <i class="fab fa-pinterest-p" style="color: white; background: #e93737;"></i>
-
-            </div>
-
-        </div>
-        <div class="recipe">
-            <div class="title-recipe">
-                <h3>Pionono salado</h3>
-                <p>Muy sensillo, economico y rapido, sirve para rellenar con ingredientes dulces o salados. Aqui va la
-                    receta bien caserita, como lo hacia mi abuela</p>
-            </div>
-            <div class="intro">
-                <p>"La cocina es algo que viene de generacion en generacion, desde nuestros ancestros hasta ahora en
-                    nuestra
-                    actualidad. Muchas recetas tradicionales."</p>
-                <p class="elena">ELENA REMOTO</p>
-            </div>
-            <div class="ingredients">
-                <ul>
-                    <li>2 Cebolla morada</li>
-                    <li>6 Champiñones</li>
-                    <li>4 cdas de Pan rallado</li>
-                    <li>1 atado de perejil</li>
-                    <li>2 chiles jalapeño</li>
-                    <li>1 paquete de queso dambo en fetas</li>
-                </ul>
+            <div class="recipe">
+                <div class="title-recipe">
+                    <h3>Pionono salado</h3>
+                    <p>Muy sensillo, economico y rapido, sirve para rellenar con ingredientes dulces o salados. Aqui va
+                        la
+                        receta bien caserita, como lo hacia mi abuela</p>
+                </div>
+                <div class="intro">
+                    <p>"La cocina es algo que viene de generacion en generacion, desde nuestros ancestros hasta ahora en
+                        nuestra
+                        actualidad. Muchas recetas tradicionales."</p>
+                    <p class="elena">ELENA REMOTO</p>
+                </div>
+                <div class="ingredients">
+                    <ul>
+                        <li>2 Cebolla morada</li>
+                        <li>6 Champiñones</li>
+                        <li>4 cdas de Pan rallado</li>
+                        <li>1 atado de perejil</li>
+                        <li>2 chiles jalapeño</li>
+                        <li>1 paquete de queso dambo en fetas</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-
-    <!--<footer>
+    <footer>
         <div class="footer-links">
             <ul class="footer-list">
-                <li><i class="fab fa-facebook-f">FACEBOOK</i></li>
-                <li><i class="fab fa-twitter">TWITTER</i></li>
-                <li><i class="fab fa-google-plus-g">GOOGLE</i></li>
-                <li><i class="fab fa-linkedin">LINKEDIN</i></li>
-                <li><i class="fab fa-instagram">INSTAGRAM</i></li>
-                <li><i class="fab fa-youtube">YOUTUBE</i></li>
+                <li><i class="fab fa-facebook-f"><span>FACEBOOK</span></i></li>
+                <li><i class="fab fa-twitter"><span>TWITTER</span></i></li>
+                <li><i class="fab fa-google-plus-g"><span>GOOGLE</span></i></li>
+                <li><i class="fab fa-linkedin"><span>LINKEDIN</span></i></li>
+                <li><i class="fab fa-instagram"><span>INSTAGRAM</span></i></li>
+                <li><i class="fab fa-youtube"><span>YOUTUBE</span></i></li>
             </ul>
         </div>
-    </footer>-->
+    </footer>
 
 </body>
 
