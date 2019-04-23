@@ -1,12 +1,18 @@
 .footer-list { 
     display: flex;
-    font-family: $main-font;
-        font-size: 10px;
-        color: grey;
+        color: $main-color;
         margin-bottom: 10px;
-        padding: 31px;
-        border-bottom: 1px solid #9E9E9E;
+        margin-top: 30px;
+        padding: 0;
         list-style: none;
-        justify-content: space-between;
-
+        justify-content: space-evenly;
+        border-bottom: 1px solid rgba(105, 105, 105, 0.479);
+        li{
+            letter-spacing: 8pt;
+        }
+        span{
+            font-family: $main-font;
+            letter-spacing: 0pt;
+            font-size: 12px;
+        }
 }

@@ -1,20 +1,21 @@
-body {
+#receta {
     width: 100%;
     margin: auto;
     display: flex;
    justify-content: center;  
 }
 
-img {
-    width: 515px;
-    margin: 40px;
-    border-radius: 10%;
-}
 .pionono-salado {
     display: flex;
     position: relative;
     flex-direction: column;
-}
+    img {
+        width: 515px;
+        margin: 40px;
+        border-radius: 10%;
+    }
+    
+    }
 .recipe {
     margin-left: 40px;
 }
@@ -57,4 +58,3 @@ color: #7f8180;
     text-align: center;
     font-size: 9px;
 }
-

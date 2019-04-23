@@ -1,0 +1,38 @@
+.icons {
+    position: absolute;
+    top: 115px;
+    display: flex;
+    flex-direction: column;
+    margin: -15px;
+    .fa-facebook-f{
+        color: white; 
+        background: #523fff;
+    }
+    .fa-twitter{ 
+        color: white; 
+        background: #3fc2ff;
+    }
+    .fa-google-plus-g{
+        color: white; 
+        background: #fc8038;
+    }
+    .fa-instagram{
+        color: white; 
+        background: #a04e1f;
+    }
+    .fa-pinterest-p{
+        color: white; 
+        background: #e93737;
+    }
+}
+.fab {
+    list-style: none;
+    font-size: 15px;
+    padding: 5px;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    line-height: 19px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
