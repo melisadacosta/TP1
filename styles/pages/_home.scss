@@ -2,20 +2,17 @@
 #home{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .banner-imgs{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     .img-transition, .img-transition1{ 
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 10px;
-        flex-grow: 1;
     img{
-        max-width: 300px;
+        max-width: 320px;
     }
     @media (max-width:1200px){
         img{
@@ -149,7 +146,7 @@
         position: relative;
         align-content: space-between;
         max-width: 670px;
-        border-top: 0.5px solid $main-color;
+        border-top: 1px solid rgba(105, 105, 105, 0.479);
         padding-top: 25px;
         .img-radius{
             max-width: 320px;
@@ -160,12 +157,6 @@
             font-family: $main-font;
             font-size: 10px;
             color: $main-color;
-            .fa-heart, .fa-comments, .fa-share-alt{
-                letter-spacing: 2pt; 
-                i{
-                    font-family: $main-font;
-                }
-            }
         }
         h3{
             font-family: $main-font;
@@ -181,7 +172,18 @@
         .text-art{
             display: flex;
             flex-direction: column;
-            margin-top: -60px;
+            height: 190px;
+        }
+        .text-icons{
+            display: flex;
+            justify-content: space-between;
+            .fa-heart, .fa-comments, .fa-share-alt{
+                letter-spacing: 2pt; 
+                color: $main-color;
+                i{
+                    font-family: $main-font;
+                }
+            }
         }
     }
 }
