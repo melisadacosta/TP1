@@ -1,19 +1,15 @@
-body {
-    width: 100%;
-    margin: auto;
-    display: flex;
-   justify-content: center;  
-}
 
-img {
+.container-recipe{ 
+    width: 100%;
+    align-content: center;
+}
+.foto-recipe {
     width: 515px;
     margin: 40px;
     border-radius: 10%;
 }
 .pionono-salado {
-    display: flex;
     position: relative;
-    flex-direction: column;
 }
 .recipe {
     margin-left: 40px;
@@ -39,7 +35,6 @@ color: #7f8180;
 
 .ingredients ul {
     margin-left: -30px;
-    align-items: flex-start;
     color: #7f8180;
     font-size: 12px;
     font-family: $main-font;
@@ -48,13 +43,11 @@ color: #7f8180;
 .ingredients li::before {
     content: "•";
     color: $secondary-color;
-    display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
 .span {
     font-family: $main-font;
-    text-align: center;
     font-size: 9px;
 }
 
