@@ -412,13 +412,18 @@ header .submenu:hover .submenu-list {
 
 #receta {
   width: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  margin-left: 30%;
+}
+
+.banner-img .banner img {
+  width: 100%;
 }
 
 .pionono-salado {
-  display: flex;
   position: relative;
   flex-direction: column;
 }
@@ -456,7 +461,6 @@ header .submenu:hover .submenu-list {
 
 .ingredients ul {
   margin-left: -30px;
-  align-items: flex-start;
   color: #7f8180;
   font-size: 12px;
   font-family: "IBM Plex Mono", monospace;
@@ -466,14 +470,12 @@ header .submenu:hover .submenu-list {
 .ingredients li::before {
   content: "•";
   color: coral;
-  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
 
 .span {
   font-family: "IBM Plex Mono", monospace;
-  text-align: center;
   font-size: 9px;
 }
 

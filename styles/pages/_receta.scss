@@ -2,6 +2,15 @@
     width: 100%;
     align-content: center;
 }
+.banner-img {
+    display: flex;
+    .banner{
+        justify-content: center;
+        img{
+            width: 100%;
+        }
+    }
+}
 .pionono-salado {
     position: relative;
     flex-direction: column;

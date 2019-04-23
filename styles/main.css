@@ -444,6 +444,22 @@ header .submenu:hover .submenu-list {
       align-content: center;
 }
 
+.banner-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner-img .banner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-img .banner img {
+  width: 100%;
+}
+
 .pionono-salado {
   position: relative;
   -webkit-box-orient: vertical;
