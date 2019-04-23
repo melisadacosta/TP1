@@ -6,22 +6,22 @@ body {
 }
 
 img {
-    width: 400px;
-    height: 300px;
-    margin: 20px;
+    width: 515px;
+    margin: 40px;
     border-radius: 10%;
 }
 .pionono-salado {
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
     flex-direction: column;
-    border-radius: 10%;
 }
-
+.recipe {
+    margin-left: 40px;
+}
 .title-recipe {
-    max-width: 400px;
+    max-width: 515px;
     font-size: 12px;
-   font-family: "IBM Plex Mono", monospace;
+    font-family: $main-font;
 }
 .title-recipe p {
 color: #7f8180;
@@ -30,24 +30,31 @@ color: #7f8180;
   color:  #7f8180;
 }
 .intro {
-    border-left: 2px solid #e66c2c;
+    border-left: 2px solid $secondary-color;
     padding: 5px 0px 5px 10px;
-    max-width: 400px;
+    max-width: 515px;
     font-size: 12px;
-    font-family: "IBM Plex Mono", monospace;
+    font-family:$main-font;
 }
 
-ul {
+.ingredients ul {
+    margin-left: -30px;
     align-items: flex-start;
     color: #7f8180;
     font-size: 12px;
-    font-family:  "IBM Plex Mono", monospace;
+    font-family: $main-font;
     list-style: none;    
 }
-li::before {
+.ingredients li::before {
     content: "•";
-    color: #e66c2c;
+    color: $secondary-color;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
+.span {
+    font-family: $main-font;
+    text-align: center;
+    font-size: 9px;
+}
+
