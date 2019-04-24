@@ -2,21 +2,23 @@
     width: 100%;
     align-content: center;
 }
-.banner-img {
-    display: flex;
-    .banner{
-        justify-content: center;
-        img{
-            width: 100%;
-        }
+.recipe-container{
+    margin-left: 28%
+}
+.banner-recipe {
+    .banner-r-recipe{ 
+    img {
+        width:100%;
     }
+  }
 }
 .pionono-salado {
     position: relative;
     flex-direction: column;
     img {
         width: 515px;
-        margin: 40px;
+        margin-top:40px;
+        margin-left: 40px;
         border-radius: 10%;
     }
     
@@ -31,6 +33,10 @@
 }
 .title-recipe p {
 color: #7f8180;
+
+}
+.title-recipe h3 {
+    margin-left:10px;
 }
 .elena {
   color:  #7f8180;
@@ -56,7 +62,4 @@ color: #7f8180;
     width: 1em;
     margin-left: -1em;
 }
-.span {
-    font-family: $main-font;
-    font-size: 9px;
-}
+

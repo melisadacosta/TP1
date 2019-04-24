@@ -24,6 +24,7 @@
         color: white; 
         background: #e93737;
     }
+    
 }
 .fab {
     list-style: none;
@@ -35,4 +36,29 @@
     line-height: 19px;
     border-radius: 50%;
     margin-bottom: 15px;
+}
+.maria-icons {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 9px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+    max-width: 515px;
+    font-size: 10px;
+    margin-left: 40px;
+
+}
+.home-recipe-icons {
+    display: flex;
+    margin-left:40px;
+    font-size: 10px;
+    font-family: $main-font;
+    
+}
+.home-r-icons{
+    color: $main-color;
+    font-size: 10px;
+    font-family: $main-font;
 }

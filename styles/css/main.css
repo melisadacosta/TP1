@@ -394,6 +394,8 @@ header .submenu:hover .submenu-list {
 .footer-list {
   display: flex;
   color: dimgray;
+  max-width: 990px;
+  margin-left: 157px;
   margin-bottom: 10px;
   margin-top: 30px;
   padding: 0;
@@ -415,11 +417,11 @@ header .submenu:hover .submenu-list {
   align-content: center;
 }
 
-.container {
-  margin-left: 30%;
+.recipe-container {
+  margin-left: 28%;
 }
 
-.banner-img .banner img {
+.banner-recipe .banner-r-recipe img {
   width: 100%;
 }
 
@@ -429,7 +431,8 @@ header .submenu:hover .submenu-list {
 }
 .pionono-salado img {
   width: 515px;
-  margin: 40px;
+  margin-top: 40px;
+  margin-left: 40px;
   border-radius: 10%;
 }
 
@@ -445,6 +448,10 @@ header .submenu:hover .submenu-list {
 
 .title-recipe p {
   color: #7f8180;
+}
+
+.title-recipe h3 {
+  margin-left: 10px;
 }
 
 .elena {
@@ -472,11 +479,6 @@ header .submenu:hover .submenu-list {
   color: coral;
   width: 1em;
   margin-left: -1em;
-}
-
-.span {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 9px;
 }
 
 #home {
@@ -764,6 +766,32 @@ header .submenu:hover .submenu-list {
   line-height: 19px;
   border-radius: 50%;
   margin-bottom: 15px;
+}
+
+.maria-icons {
+  color: dimgray;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  display: flex;
+  max-width: 515px;
+  font-size: 10px;
+  margin-left: 40px;
+}
+
+.home-recipe-icons {
+  display: flex;
+  margin-left: 40px;
+  font-size: 10px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.home-r-icons {
+  color: dimgray;
+  font-size: 10px;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 /*# sourceMappingURL=main.css.map */
