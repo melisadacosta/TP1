@@ -391,16 +391,18 @@ header .submenu:hover .submenu-list {
   visibility: visible;
 }
 
+.footer-links {
+  margin-top: 30px;
+}
+
 .footer-list {
   display: flex;
   color: dimgray;
   max-width: 990px;
-  margin-left: 157px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(105, 105, 105, 0.479);
 }
 .footer-list li {
@@ -783,9 +785,11 @@ header .submenu:hover .submenu-list {
 
 .home-recipe-icons {
   display: flex;
-  margin-left: 40px;
-  font-size: 10px;
+  max-width: 990px;
+  margin: 0 auto;
+  margin-top: 20px;
   font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
 }
 
 .home-r-icons {

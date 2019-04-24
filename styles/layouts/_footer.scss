@@ -1,13 +1,15 @@
+.footer-links{
+    margin-top: 30px;
+}
+
 .footer-list { 
     display: flex;
         color: $main-color;
         max-width: 990px;
-        margin-left: 157px;
-        margin-bottom: 10px;
-        margin-top: 30px;
+        margin: 0 auto;
         padding: 0;
         list-style: none;
-        justify-content: space-evenly;
+        justify-content: space-between;
         border-bottom: 1px solid rgba(105, 105, 105, 0.479);
         li{
             letter-spacing: 8pt;
