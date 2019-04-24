@@ -391,8 +391,28 @@ header .submenu:hover .submenu-list {
   visibility: visible;
 }
 
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .navegador {
+    overflow: hidden;
+    background-color: coral;
+    position: relative;
+    border-radius: 10px;
+    height: 40px;
+    width: 450px;
+  }
+  .navegador ul {
+    flex-direction: column;
+    visibility: hidden;
+  }
+}
 .footer-links {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .footer-list {
@@ -488,28 +508,21 @@ header .submenu:hover .submenu-list {
   flex-direction: column;
 }
 
+/* BANNER PRINCIPAL DE IMAGENES */
 .banner-imgs {
   display: flex;
   justify-content: space-between;
 }
-.banner-imgs .img-transition, .banner-imgs .img-transition1 {
+.banner-imgs .img-transition, .banner-imgs .img-transition1, .banner-imgs .img-transition2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.banner-imgs .img-transition img, .banner-imgs .img-transition1 img {
+.banner-imgs .img-transition img, .banner-imgs .img-transition1 img, .banner-imgs .img-transition2 img {
   max-width: 320px;
 }
-@media (max-width: 1200px) {
-  .banner-imgs .img-transition img, .banner-imgs .img-transition1 img {
-    max-width: 400px;
-  }
-  .banner-imgs .img-transition .text-container:hover, .banner-imgs .img-transition1 .text-container:hover {
-    width: 400px;
-  }
-}
-.banner-imgs .img-transition .text-container, .banner-imgs .img-transition1 .text-container {
+.banner-imgs .img-transition .text-container, .banner-imgs .img-transition1 .text-container, .banner-imgs .img-transition2 .text-container {
   visibility: hidden;
   overflow: hidden;
   position: absolute;
@@ -522,18 +535,18 @@ header .submenu:hover .submenu-list {
   background-color: rgba(255, 127, 80, 0.726);
   transition: 0.5s ease-in;
 }
-.banner-imgs .img-transition span, .banner-imgs .img-transition1 span {
+.banner-imgs .img-transition span, .banner-imgs .img-transition1 span, .banner-imgs .img-transition2 span {
   font-size: 10px;
   padding-left: 15px;
 }
-.banner-imgs .img-transition p, .banner-imgs .img-transition1 p {
+.banner-imgs .img-transition p, .banner-imgs .img-transition1 p, .banner-imgs .img-transition2 p {
   font-size: 14px;
   padding-left: 15px;
   line-height: 20px;
   font-family: "IBM Plex Mono", monospace;
 }
 
-.img-transition1 {
+.img-transition1, .img-transition2 {
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -544,6 +557,12 @@ header .submenu:hover .submenu-list {
   bottom: 0px;
 }
 
+.img-transition2:hover .text-container {
+  visibility: visible;
+  bottom: 0px;
+}
+
+/* IMAGENES CON BOTONES RECETA + PLATOS + EXOTICOS */
 .container-sections {
   display: flex;
   flex-direction: row;
@@ -559,12 +578,8 @@ header .submenu:hover .submenu-list {
   border-radius: 15%;
   margin: 10px;
 }
-@media (max-width: 1200px) {
-  .container-sections .img-radius {
-    max-width: 300px;
-  }
-}
 
+/* SECCION VIDEO */
 .secondary-container {
   display: flex;
   flex-direction: row;
@@ -587,6 +602,7 @@ header .submenu:hover .submenu-list {
   font-size: 10px;
 }
 
+/* ASIDE PRESENTACION COCINERA */
 .presentacion {
   max-width: 290px;
   align-items: center;
@@ -623,11 +639,12 @@ header .submenu:hover .submenu-list {
   line-height: 16px;
 }
 
+/* ARTICULOS DE RECETAS */
 .container-art {
   display: flex;
   flex-direction: column;
 }
-.container-art .receta-art {
+.container-art .receta-art, .container-art .receta-art1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -639,44 +656,134 @@ header .submenu:hover .submenu-list {
   border-top: 1px solid rgba(105, 105, 105, 0.479);
   padding-top: 25px;
 }
-.container-art .receta-art .img-radius {
+.container-art .receta-art .img-radius, .container-art .receta-art1 .img-radius {
   max-width: 320px;
   border-radius: 15%;
   margin-right: 35px;
 }
-.container-art .receta-art span {
+.container-art .receta-art span, .container-art .receta-art1 span {
   font-family: "IBM Plex Mono", monospace;
   font-size: 10px;
   color: dimgray;
 }
-.container-art .receta-art h3 {
+.container-art .receta-art h3, .container-art .receta-art1 h3 {
   font-family: "IBM Plex Mono", monospace;
   font-size: 16px;
   margin-bottom: 0px;
 }
-.container-art .receta-art p {
+.container-art .receta-art p, .container-art .receta-art1 p {
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
   color: dimgray;
   margin-bottom: 30px;
 }
-.container-art .receta-art .text-art {
+.container-art .receta-art .text-art, .container-art .receta-art1 .text-art {
   display: flex;
   flex-direction: column;
   height: 190px;
 }
-.container-art .receta-art .text-icons {
+.container-art .receta-art .text-icons, .container-art .receta-art1 .text-icons {
   display: flex;
   justify-content: space-between;
 }
-.container-art .receta-art .text-icons .fa-heart, .container-art .receta-art .text-icons .fa-comments, .container-art .receta-art .text-icons .fa-share-alt {
+.container-art .receta-art .text-icons .fa-heart, .container-art .receta-art .text-icons .fa-comments, .container-art .receta-art .text-icons .fa-share-alt, .container-art .receta-art1 .text-icons .fa-heart, .container-art .receta-art1 .text-icons .fa-comments, .container-art .receta-art1 .text-icons .fa-share-alt {
   letter-spacing: 2pt;
   color: dimgray;
 }
-.container-art .receta-art .text-icons .fa-heart i, .container-art .receta-art .text-icons .fa-comments i, .container-art .receta-art .text-icons .fa-share-alt i {
+.container-art .receta-art .text-icons .fa-heart i, .container-art .receta-art .text-icons .fa-comments i, .container-art .receta-art .text-icons .fa-share-alt i, .container-art .receta-art1 .text-icons .fa-heart i, .container-art .receta-art1 .text-icons .fa-comments i, .container-art .receta-art1 .text-icons .fa-share-alt i {
   font-family: "IBM Plex Mono", monospace;
 }
 
+/* MEDIA QUERIES HOME */
+@media (max-width: 480px) {
+  .container-sections {
+    flex-direction: column;
+  }
+  .container-sections .img-radius {
+    max-width: 370px;
+  }
+  .container-sections .btn2, .container-sections .btn1, .container-sections .btn3 {
+    transform: translate(0, -148px);
+    right: 27%;
+  }
+
+  .banner-imgs .img-transition {
+    display: none;
+  }
+
+  .img-transition2 img {
+    display: none;
+  }
+
+  .banner-imgs {
+    justify-content: center;
+  }
+  .banner-imgs .img-transition1 img {
+    width: 370px;
+    margin-top: 25px;
+  }
+
+  .secondary-container {
+    flex-direction: column;
+  }
+  .secondary-container .column iframe, .secondary-container .column p {
+    display: none;
+  }
+  .secondary-container .receta-art1 {
+    display: none !important;
+  }
+  .secondary-container .receta-art {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+    border-top: none;
+    margin-bottom: 90px;
+  }
+  .secondary-container .receta-art h3 {
+    font-size: 28px;
+  }
+  .secondary-container .receta-art img {
+    display: none;
+  }
+  .secondary-container .receta-art p {
+    display: inline;
+    margin: 20px 15px;
+    font-size: 18px;
+  }
+  .secondary-container .receta-art span {
+    font-size: 22px;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+  .secondary-container .receta-art .btn-art {
+    margin-top: 30px;
+  }
+  .secondary-container .presentacion {
+    max-width: none;
+    margin: 0;
+  }
+  .secondary-container .presentacion h1 {
+    width: 380px;
+  }
+  .secondary-container .presentacion img {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+  }
+  .secondary-container .presentacion p {
+    line-height: 22px;
+    margin: 10px 48px;
+    font-size: 18px;
+  }
+
+  .footer-list {
+    margin: 0 15px;
+  }
+  .footer-list span {
+    display: none;
+  }
+}
+/* BOTONES PLATOS + RECETAS + EXOTICOS */
 .btn1, .btn2, .btn3 {
   border: 0;
   background-color: white;
@@ -718,6 +825,7 @@ header .submenu:hover .submenu-list {
   cursor: pointer;
 }
 
+/* BOTONES ARTICULOS RECETAS */
 .btn-art {
   border: 0;
   background-color: rgba(255, 127, 80, 0.336);

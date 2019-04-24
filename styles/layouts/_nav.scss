@@ -56,3 +56,23 @@ header{
     
 }
 
+@media (max-width:480px){
+    header{
+        h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    }
+    .navegador{
+        overflow: hidden;
+        background-color: $secondary-color;
+        position: relative;
+        border-radius: 10px;
+        height: 40px;
+        width: 450px;
+        ul{
+            flex-direction: column;
+            visibility: hidden; 
+        }
+    }
+}
