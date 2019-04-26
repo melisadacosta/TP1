@@ -54,14 +54,25 @@
 .home-recipe-icons {
     display: flex;
     max-width: 990px;
-    margin: 0 auto;
+    margin:0 auto;
     margin-top: 20px;
     font-family: $main-font;
     font-size: 10px;
-}
-.home-r-icons{
-    color: $main-color;
-    font-size: 10px;
-    font-family: $main-font;
+    .fas {
+        padding-right: 5px;
+    }
+    span {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 10px;
+
+        
+    }
+    p {
+        font-family: 20px;
+        font-weight: bold;
+        margin: 0;
+        font-family: $main-font;
+    }
 }
 
