@@ -21,3 +21,38 @@
             font-size: 12px;
         }
 }
+
+/* FOOTER MOBILE */
+.buttom-footer{
+    display: none;
+    
+}
+@media (max-width:480px){
+    .footer-list{
+        border-bottom: 1px solid rgba(105, 105, 105, 0.479);
+        padding-bottom: 50px;
+    }
+    .buttom-footer{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        .fas{
+            padding: 5px;
+            width: 35px;
+            height: 45px;
+            text-align: center;
+            border-radius: 60px;
+            margin-bottom: 15px;
+            line-height: 40px;
+            position: absolute;
+            top: -55px;
+        }
+        .fa-arrow-up{
+            flex-direction: center;
+            background-color: $secondary-color;
+            color: white;
+            font-size: 25px;
+        }
+    }
+}
