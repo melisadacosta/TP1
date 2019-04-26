@@ -1,3 +1,4 @@
+/* NAVEGADOR MENU DESKTOP */
 header{
     h1{
         font-family: $secondary-font;
@@ -55,24 +56,60 @@ header{
     }
     
 }
-
+/* NAVEGADOR MENU MOBILE */
+.navegador-mobile{
+    display: none;
+}
 @media (max-width:480px){
+    .navegador{
+        display: none;
+    }
     header{
         h1{
             font-size: 60px;
             margin-bottom: 20px;
         }
     }
-    .navegador{
-        overflow: hidden;
+    .navegador-mobile{
+        display: flex;
+        align-items: center;
         background-color: $secondary-color;
-        position: relative;
+        justify-content: center;
         border-radius: 10px;
         height: 40px;
-        width: 450px;
+        width: 430px;
+        margin: 0 auto;
         ul{
+        display: flex;
+        list-style: none;
+        font-family: $main-font;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        justify-content: center;
+        flex-direction: column;
+        li span{
+            cursor: pointer;
+        }
+        .submenu-list-mobile{
+            visibility: hidden;
+            position: absolute;
+            display: flex;
             flex-direction: column;
-            visibility: hidden; 
+            text-align: center;
+            background-color: white;
+            width: 100px;
+            left: 535px;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+        }
+        .fa-bars{
+            padding-right: 10px;
+            color: white;
+        }
+        .submenu-mobile:hover .submenu-list-mobile{
+            visibility: visible;
+        }   
         }
     }
 }

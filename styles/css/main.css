@@ -338,6 +338,7 @@ template {
   display: none;
 }
 
+/* NAVEGADOR MENU DESKTOP */
 header h1 {
   font-family: "Indie Flower", cursive;
   text-align: center;
@@ -391,23 +392,62 @@ header .submenu:hover .submenu-list {
   visibility: visible;
 }
 
+/* NAVEGADOR MENU MOBILE */
+.navegador-mobile {
+  display: none;
+}
+
 @media (max-width: 480px) {
+  .navegador {
+    display: none;
+  }
+
   header h1 {
     font-size: 60px;
     margin-bottom: 20px;
   }
 
-  .navegador {
-    overflow: hidden;
+  .navegador-mobile {
+    display: flex;
+    align-items: center;
     background-color: coral;
-    position: relative;
+    justify-content: center;
     border-radius: 10px;
     height: 40px;
-    width: 450px;
+    width: 430px;
+    margin: 0 auto;
   }
-  .navegador ul {
+  .navegador-mobile ul {
+    display: flex;
+    list-style: none;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: center;
     flex-direction: column;
+  }
+  .navegador-mobile ul li span {
+    cursor: pointer;
+  }
+  .navegador-mobile ul .submenu-list-mobile {
     visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    width: 100px;
+    left: 535px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+  }
+  .navegador-mobile ul .fa-bars {
+    padding-right: 10px;
+    color: white;
+  }
+  .navegador-mobile ul .submenu-mobile:hover .submenu-list-mobile {
+    visibility: visible;
   }
 }
 .footer-links {
@@ -434,6 +474,41 @@ header .submenu:hover .submenu-list {
   font-size: 12px;
 }
 
+/* FOOTER MOBILE */
+.buttom-footer {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .footer-list {
+    border-bottom: 1px solid rgba(105, 105, 105, 0.479);
+    padding-bottom: 50px;
+  }
+
+  .buttom-footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .buttom-footer .fas {
+    padding: 5px;
+    width: 35px;
+    height: 45px;
+    text-align: center;
+    border-radius: 60px;
+    margin-bottom: 15px;
+    line-height: 40px;
+    position: absolute;
+    top: -55px;
+  }
+  .buttom-footer .fa-arrow-up {
+    flex-direction: center;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+  }
+}
 #receta {
   width: 100%;
   align-content: center;
@@ -520,11 +595,10 @@ header .submenu:hover .submenu-list {
   align-items: center;
 }
 .banner-imgs .img-transition img, .banner-imgs .img-transition1 img, .banner-imgs .img-transition2 img {
-  max-width: 320px;
+  width: 320px;
 }
 .banner-imgs .img-transition .text-container, .banner-imgs .img-transition1 .text-container, .banner-imgs .img-transition2 .text-container {
   visibility: hidden;
-  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100px;
@@ -554,7 +628,7 @@ header .submenu:hover .submenu-list {
 
 .img-transition1:hover .text-container {
   visibility: visible;
-  bottom: 0px;
+  bottom: 4px;
 }
 
 .img-transition2:hover .text-container {
@@ -694,7 +768,7 @@ header .submenu:hover .submenu-list {
   font-family: "IBM Plex Mono", monospace;
 }
 
-/* MEDIA QUERIES HOME */
+/* MEDIA QUERIES HOME MOBILE 480PX*/
 @media (max-width: 480px) {
   .container-sections {
     flex-direction: column;
@@ -783,6 +857,61 @@ header .submenu:hover .submenu-list {
     display: none;
   }
 }
+/* MEDIA QUERIES HOME INTERMEDIOS*/
+@media (max-width: 1300px) {
+  .banner-imgs {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1036px) {
+  .container-sections {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .container-sections .img-radius {
+    max-width: 400px;
+  }
+  .container-sections .btn1, .container-sections .btn2, .container-sections .btn3 {
+    transform: translate(0, -155px);
+    right: 28%;
+  }
+
+  .secondary-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 720px) {
+  .secondary-container .column iframe, .secondary-container p {
+    display: none;
+  }
+  .secondary-container .container-art {
+    margin: 10px;
+  }
+  .secondary-container .container-art p {
+    display: inline;
+  }
+}
+@media (max-width: 640px) {
+  .receta-art1 {
+    display: none !important;
+  }
+
+  .receta-art {
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+    border-top: none;
+    margin-bottom: 90px;
+  }
+  .receta-art h3 {
+    font-size: 28px;
+  }
+  .receta-art img {
+    display: none;
+  }
+}
 /* BOTONES PLATOS + RECETAS + EXOTICOS */
 .btn1, .btn2, .btn3 {
   border: 0;
@@ -836,6 +965,7 @@ header .submenu:hover .submenu-list {
   font-weight: bold;
   border-radius: 15px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .icons {
