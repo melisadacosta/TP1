@@ -416,7 +416,7 @@ header .submenu:hover .submenu-list {
     height: 40px;
     width: 430px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .navegador-mobile ul {
     display: flex;
@@ -872,7 +872,7 @@ header .submenu:hover .submenu-list {
   }
   .banner-imgs .img-transition1 img {
     width: 370px;
-    margin-top: 17px;
+    margin-top: 25px;
   }
 
   .secondary-container {

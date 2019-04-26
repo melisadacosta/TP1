@@ -49,7 +49,9 @@
     max-width: 515px;
     font-size: 10px;
     margin-left: 2px;
-
+    span{
+        font-family: $main-font;
+    }
 }
 .home-recipe-icons {
     display: flex;
