@@ -416,6 +416,7 @@ header .submenu:hover .submenu-list {
     height: 40px;
     width: 430px;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
   .navegador-mobile ul {
     display: flex;
