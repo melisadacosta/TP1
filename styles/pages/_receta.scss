@@ -119,6 +119,7 @@ color: #7f8180;
      margin-left: -100px;
     }
     .title-recipe {
+        width: 430px;
         h3{
             margin-left: 17px;
             font-size: 28px;
@@ -129,6 +130,7 @@ color: #7f8180;
       }   
     }
     .intro {
+        width: 400px;
         p {
             font-size: 23px;
         margin-right: 5px;
@@ -137,6 +139,8 @@ color: #7f8180;
     }
     .ingredients {
          ul {
+            width: 390px;
+            margin-left: -20px;
             font-size: 25px;
             line-height: 40px;
     }
@@ -154,4 +158,9 @@ color: #7f8180;
 .navegador-mobile a{
     text-decoration: none;
     color: white;
+}
+@media(max-width: 790px) {
+    .recipe-container{
+        margin-left: 110px;
+    }
 }
